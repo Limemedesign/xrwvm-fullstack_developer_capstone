@@ -2,6 +2,7 @@
 import requests
 import os
 from dotenv import load_dotenv
+from requests.exceptions import RequestException
 
 load_dotenv()
 
