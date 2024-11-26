@@ -27,6 +27,11 @@ urlpatterns = [
 
     # path('get_cars/', TemplateView.as_view(template_name="index.html")),
     path('get_cars/', views.get_cars, name='getcars'),
+    
+    # dealers
+    path('dealers/', TemplateView.as_view(template_name="index.html")),
+    path('dealer/<int:dealer_id>',TemplateView.as_view(template_name="index.html")),
+    path('postreview/<int:dealer_id>',TemplateView.as_view(template_name="index.html")),
 
     path('about/', TemplateView.as_view(template_name="About.html")),
     path('contact/', TemplateView.as_view(template_name="Contact.html")),
